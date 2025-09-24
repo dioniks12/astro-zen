@@ -44,16 +44,16 @@ const { projects } = Astro.props;
                     loop={true}
                     class="h-full w-[95%] sm:h-[85%] sm:w-full"
                 >
-                    {images.map((img) => (
-                        <SwiperSlide>
-                            <Image
-                                class="h-full w-full rounded-ss-xl rounded-ee-2xl object-cover object-center"
-                                src={img}
-                                alt={name}
-                                width="736"
-                                height="483"
-                            />
-                        </SwiperSlide>
+                    {images.map((img: string) => ( 
+                      <SwiperSlide>
+                        <Image
+                            class="h-full w-full rounded-ss-xl rounded-ee-2xl object-cover object-center"
+                            src={img}
+                            alt={name}
+                            width="736"
+                            height="483"
+                        />
+                      </SwiperSlide>
                     ))}
                 </Swiper>
             </div>
