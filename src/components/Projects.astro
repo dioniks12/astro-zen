@@ -27,14 +27,14 @@ const { projects } = Astro.props;
               <p class="text-base text-neutral">{summary}</p>
             </div>
             <div class="flex items-end justify-end overflow-hidden">
-              <Image
-                class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-none object-left-top sm:h-[85%] sm:w-full"
-                src={image}
-                alt={name}
-                width="736"
-                height="483"
-              />
-            </div>
+            <Image
+              class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-contain object-center sm:h-[85%] sm:w-full"
+              src={image}
+              alt={name}
+              width="736"
+              height="483"
+            />
+          </div>
           </div>
         </div>
       );
