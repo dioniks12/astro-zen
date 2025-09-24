@@ -43,12 +43,12 @@ export const SITE_CONTENT: SiteContent = {
   projects: [
     {
       name: "Quick Fresh Laundry",
-      summary: "Successfully completed the Quick Fresh Laundry project, a major assignment for the Web Programming course in my 5th semester. Working collaboratively in a team, implemented a user-friendly UI by adhering to best practices in design. The project utilized Laravel for the backend development and MySQL as the database. Additionally, we integrated RESTful API's for efficient data management and seamless communication between the frontend and backend systems.",
+      summary: "Successfully completed the Quick Fresh Laundry project, a major assignment for the Web Programming course in my 5th semester. Working collaboratively in a team, implemented a user-friendly UI by adhering to best practices in design.",
       image: "/laundry.png",
     },
     {
       name: "Barbershop App",
-      summary: "Completed a salon-themed Android application project using Flutter, as part of a collaborative team effort. Implemented a user-friendly UI by following best design practices and integrated REST APIs for efficient data management. Firebase was utilized for data storage, ensuring seamless and secure handling of user information and application data",
+      summary: "Completed a salon-themed Android application project using Flutter. Implemented a user-friendly UI by following best design practices and integrated REST APIs for efficient data management.",
       image: "/barbershop.png",
     },
     {
