@@ -45,7 +45,7 @@ export const SITE_CONTENT: SiteContent = {
       name: "Quick Fresh Laundry",
       summary: "Successfully completed the Quick Fresh Laundry project, a major assignment for the Web Programming course in my 5th semester. Working collaboratively in a team, implemented a user-friendly UI by adhering to best practices in design.",
       images: [ 
-        "/laundry-1.png", // <-- Masukkan gambar pertama
+        "/laundry.png", // <-- Masukkan gambar pertama
         "/laundry-2.png", // <-- Masukkan gambar kedua
         "/laundry-3.png", 
       ],
