@@ -37,7 +37,7 @@ const { projects } = Astro.props;
             {/* INI BAGIAN BARU DENGAN CAROUSEL SWIPER */}
             <div class="relative flex h-full w-full items-end justify-end overflow-hidden">
                 <Swiper
-                    modules={[Navigation, Pagination]}
+                    client:load modules={[Navigation, Pagination]}
                     slidesPerView={1}
                     navigation={true}
                     pagination={{ clickable: true }}
