@@ -3,11 +3,11 @@ import Section from "./Section.astro";
 import { Image } from "astro:assets";
 import type { ProjectProps } from "@types";
 
-// Import Swiper components dan styles
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+<style is:global>
+  @import url('swiper/css');
+  @import url('swiper/css/navigation');
+  @import url('swiper/css/pagination');
+</style>
 
 import { Navigation, Pagination } from 'swiper/modules';
 
