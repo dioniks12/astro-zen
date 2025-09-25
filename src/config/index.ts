@@ -15,7 +15,7 @@ export const SITE_CONFIG: SiteConfig = {
   socialLinks: [
     { text: "LinkedIn", href: "https://www.linkedin.com/in/dioni-lodrigus" },
     { text: "Github", href: "https://github.com/dioniks12" },
-    { text: "Instagram", href: "https://github.com/immois/astro-zen" },
+    { text: "Instagram", href: "https://www.instagram.com/dioniks._?igsh=N2xidHpiZ2JqaHRw" },
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://astro-zen.vercel.app",
@@ -69,7 +69,7 @@ export const SITE_CONTENT: SiteContent = {
       name: "Financial and Goods Management System For UMKM Toko UUS Kanigoro",
       summary: "Successfully finished a Final Assignment Project about Financial and Goods Management for Toko UUS Kanigoro, to helps the owner to maintain the financial and support the decision making for her business.",
       image:  
-        "/toko-uus.png", // <-- Masukkan gambar pertama
+        "/toko-uus-3.png", // <-- Masukkan gambar pertama
     },
   ],
   about: {
