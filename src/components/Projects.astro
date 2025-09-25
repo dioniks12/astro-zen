@@ -3,8 +3,6 @@ import Section from "./Section.astro";
 import { Image } from "astro:assets";
 import type { ProjectProps } from "@types";
 
-import { Navigation, Pagination } from 'swiper/modules';
-
 interface Props {
   projects: ProjectProps[];
 }
@@ -14,7 +12,8 @@ const { projects } = Astro.props;
 
 <Section text="Featured Projects" href="projects">
   {
-    projects.map(({ name, summary, images, linkPreview, linkSource }, index) => { // CATATAN: 'image' diganti jadi 'images'
+    // Perhatikan, di sini menggunakan 'image' tunggal
+    projects.map(({ name, summary, image, linkPreview, linkSource }, index) => {
       const top = 98 + index * 40;
       return (
         <div
@@ -30,9 +29,8 @@ const { projects } = Astro.props;
             </div>
             <div class="flex items-end justify-end overflow-hidden">
               <Image
-                // Pastikan class ini diatur untuk 'object-cover' dan 'object-center'
                 class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-cover object-center sm:h-[85%] sm:w-full"
-                src={image} // Menggunakan 'image' tunggal lagi
+                src={image}
                 alt={name}
                 width="736"
                 height="483"
