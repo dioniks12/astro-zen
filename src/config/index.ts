@@ -45,7 +45,7 @@ export const SITE_CONTENT: SiteContent = {
       name: "Quick Fresh Laundry",
       summary: "Successfully completed the Quick Fresh Laundry project, a major assignment for the Web Programming course in my 5th semester. Working collaboratively in a team, implemented a user-friendly UI by adhering to best practices in design.",
       image:  
-        "/laundry.png", // <-- Masukkan gambar pertama      
+        "/laundry-2.png", // <-- Masukkan gambar pertama      
     },
     {
       name: "Barbershop App",
@@ -66,8 +66,8 @@ export const SITE_CONTENT: SiteContent = {
         "/cctv.png", // <-- Masukkan gambar pertama
     },
     {
-      name: "Financial and Goods Management System For UMKM Toko UUS Kanigoro",
-      summary: "Successfully finished a Final Assignment Project about Financial and Goods Management for Toko UUS Kanigoro, to helps the owner to maintain the financial and support the decision making for her business.",
+      name: "Financial and Goods Management System",
+      summary: "Successfully finished a Final Assignment Project about Financial and Goods Management for UMKM, to helps the owner to maintain the financial and support the decision making for her business.",
       image:  
         "/toko-uus-3.png", // <-- Masukkan gambar pertama
     },
