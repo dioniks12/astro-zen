@@ -3,14 +3,11 @@ import Section from "./Section.astro";
 import { Image } from "astro:assets";
 import type { ProjectProps } from "@types";
 
-<style is:global>
-  @import url('swiper/css');
-  @import url('swiper/css/navigation');
-  @import url('swiper/css/pagination');
-</style>
+// Import Swiper components dan styles
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
 
-import { Navigation, Pagination } from 'swiper/modules';
-
+// Catatan: Pastikan file ini ada di folder public
 interface Props {
   projects: ProjectProps[];
 }
@@ -20,7 +17,7 @@ const { projects } = Astro.props;
 
 <Section text="Featured Projects" href="projects">
   {
-    projects.map(({ name, summary, images, linkPreview, linkSource }, index) => { // CATATAN: 'image' diganti jadi 'images'
+    projects.map(({ name, summary, images, linkPreview, linkSource }, index) => {
       const top = 98 + index * 40;
       return (
         <div
@@ -34,33 +31,40 @@ const { projects } = Astro.props;
               </h3>
               <p class="text-base text-neutral">{summary}</p>
             </div>
-            {/* INI BAGIAN BARU DENGAN CAROUSEL SWIPER */}
+            {/* Bagian carousel */}
             <div class="relative flex h-full w-full items-end justify-end overflow-hidden">
-                <Swiper
-                    client:load modules={[Navigation, Pagination]}
-                    slidesPerView={1}
-                    navigation={true}
-                    pagination={{ clickable: true }}
-                    loop={true}
-                    className="h-full w-[95%] sm:h-[85%] sm:w-full"
-                  >
-                    {images.map((img: string) => ( 
-                      <SwiperSlide>
-                        <Image
-                            class="h-full w-full rounded-ss-xl rounded-ee-2xl object-cover object-center"
-                            src={img}
-                            alt={name}
-                            width="736"
-                            height="483"
-                        />
-                      </SwiperSlide>
-                    ))}
-                </Swiper>
+              <Swiper
+                client:load
+                modules={[Navigation, Pagination]}
+                slidesPerView={1}
+                navigation={true}
+                pagination={{ clickable: true }}
+                loop={true}
+                className="h-full w-[95%] sm:h-[85%] sm:w-full"
+              >
+                {images.map((img: string) => (
+                  <SwiperSlide>
+                    <Image
+                      class="h-full w-full rounded-ss-xl rounded-ee-2xl object-cover object-center"
+                      src={img}
+                      alt={name}
+                      width="736"
+                      height="483"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
-            {/* AKHIR DARI BAGIAN BARU */}
+            {/* Akhir bagian carousel */}
           </div>
         </div>
       );
     })
   }
 </Section>
+
+<style is:global>
+  @import 'swiper/css';
+  @import 'swiper/css/navigation';
+  @import 'swiper/css/pagination';
+</style>
