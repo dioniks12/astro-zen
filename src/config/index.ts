@@ -44,52 +44,37 @@ export const SITE_CONTENT: SiteContent = {
     {
       name: "Quick Fresh Laundry",
       summary: "Successfully completed the Quick Fresh Laundry project, a major assignment for the Web Programming course in my 5th semester. Working collaboratively in a team, implemented a user-friendly UI by adhering to best practices in design.",
-      images: [ 
-        "/laundry.png", // <-- Masukkan gambar pertama
-        "/laundry-2.png", // <-- Masukkan gambar kedua
-        "/laundry-3.png", 
-      ],
+      image:  
+        "/laundry.png", // <-- Masukkan gambar pertama      
     },
     {
       name: "Barbershop App",
       summary: "Completed a salon-themed Android application project using Flutter. Implemented a user-friendly UI by following best design practices and integrated REST APIs for efficient data management.",
-      images: [ 
+      image: 
         "/barbershop.png", // <-- Masukkan gambar pertama
-        "/barbershop-2.png", // <-- Masukkan gambar kedua
-        "/barbershop-3.png", 
-      ],
     },
     {
       name: "Atma Kitchen Bakery & Sales",
       summary: "Sucessfully finished web based project on 6th semester, Implementing Laravel framework and MySQL databases about bakery and order topics",
-      images: [ 
+      image:  
         "/atma-kitchen.png", // <-- Masukkan gambar pertama
-        "/atma-kitchen-2.png", // <-- Masukkan gambar kedua
-        "/atma-kitchen-3.png", 
-      ],
     },
     {
       name: "Monitoring CCTV Kota Madiun",
       summary: "Succesfully finished internship project at Dinas Komunikasi dan Informatika Kota Madiun, and also integrating Laravel, PostgreSQL, and RTSP to provide live CCTV in every locations.",
-      images: [ 
+      image:  
         "/cctv.png", // <-- Masukkan gambar pertama
-        "/cctv-2.png", // <-- Masukkan gambar kedua
-        "/cctv-3.png", 
-      ],
     },
     {
       name: "Financial and Goods Management System For UMKM Toko UUS Kanigoro",
       summary: "Successfully finished a Final Assignment Project about Financial and Goods Management for Toko UUS Kanigoro, to helps the owner to maintain the financial and support the decision making for her business.",
-      images: [ 
+      image:  
         "/toko-uus.png", // <-- Masukkan gambar pertama
-        "/toko-uus-2.png", // <-- Masukkan gambar kedua
-        "/toko-uus-3.png", 
-      ],
     },
   ],
   about: {
     description: `
-      Hi, I’m Dioni Krisna Saputra Lodrigus, A Fresh graduated and passionate Web Developer with a talent for crafting seamless digital experiences. With a strong background in both Android and iOS development, along with expertise in front-end web technologies, I thrive at the intersection where creativity meets technology.
+      Hi, I’m Dioni Krisna Saputra Lodrigus, A Fresh graduated and passionate Web Developer with a talent for crafting seamless digital experiences. With a strong background in programming language, along with expertise in front-end web technologies, I thrive at the intersection where creativity meets technology.
 
       Over the years, I've honed my skills in building robust, user-friendly applications that not only meet user needs but also push the boundaries of what's possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
     `,
